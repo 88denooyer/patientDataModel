@@ -8,17 +8,6 @@ from pprint import pprint
 with open('../randomDataGen/average.json') as data_file:
     data = json.load(data_file)
 
-"""
-# need to figure out for loop to iterate through the Patient #
-# tried for i in range(1, 601) but that makes i an int
-# and i couldn't do ['Patient ' + i]
-
-# create function that takes input string of 'Patient 1'
-# read string p, a, t, i, e, n, t, (space), 1
-# separate patient and the digit
-# convert to int then increment then convert to string again
-# append increment string to Patient
-"""
 
 pain_list = []
 flex_list = []
