@@ -31,7 +31,7 @@ day4_flex = []
 day5_flex = []
 day6_flex = []
 day7_flex = []
-_day = 8
+_day = 5
 
 
 # simple function that will get sum of array items
@@ -49,6 +49,7 @@ it can be called as like get_array_day(2) which will return the
 day2_pain array which makes it easier to call
 later in the pain and flex path functions
 """
+
 
 def get_flex_day(day_num):
     day_list = {1: day1_flex,
@@ -103,12 +104,9 @@ def define_pain_path(path, name, day):
 
 
 # does all mapping and appending to the global array defined in function
-# define_pain_path('GOOD_PATIENT', 'GPD1.json')
-# define_flex_path('GOOD_PATIENT', 'GPD1.json')
 define_pain_path(path_list[0], good_name_list[0], _day)
-pprint(get_pain_day(_day))
-# pprint(get_sum(pain_list))
-# pprint(get_pain_day(1))
+# pprint(get_pain_day(_day))
+pprint(get_sum(get_pain_day(_day)))
 
 
 """
@@ -116,42 +114,4 @@ get each daily pain data points for GOOD_DATA
 store each daily data set in an array
 x0 = d1, x1 = d2, ... xn = dn+1
 y = all pain data points for xn
-"""
-
-"""
-# gets the sums
-pprint('Pain Sum total')
-get_sum(pain_list)
-pprint('Flex Sum total')
-get_sum(flex_list)
-"""
-
-# pprint(pain_list)
-# pprint('END')
-# pprint(flex_list)
-
-
-# all garbage testing for trying different things
-"""
-pprint(define_file_path('GOOD_PATIENT', 'GPD1.json'))
-pprint(define_file_path('GOOD_PATIENT', 'GPD2.json'))
-pprint(define_file_path('GOOD_PATIENT', 'GPD3.json'))
-pprint(define_file_path('GOOD_PATIENT', 'GPD4.json'))
-pprint(define_file_path('GOOD_PATIENT', 'GPD5.json'))
-pprint(define_file_path('GOOD_PATIENT', 'GPD6.json'))
-pprint(define_file_path('GOOD_PATIENT', 'GPD7.json'))
-"""
-
-"""
-def readFile(filename):
-    filehandle = open(filename)
-    print(filehandle.read())
-    filehandle.close
-
-
-fileDir = os.path.dirname(os.path.relpath('__file__'))
-filename = os.path.join(fileDir, '../randomDataGen/average.json')
-readFile(filename)
-
-readFile(filename)
 """
