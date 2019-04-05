@@ -1,0 +1,95 @@
+"""
+pAI developing Patient Model Groups
+
+Beginning:
+    Grouping Pain Tolerance
+        Everyday Occurrence Pain:
+            1. Migraine
+                a. Stops activity for the day (debilitating)
+                b. Need a break from activity to take Advil and recover
+                c. No need to stop work, takes Advil
+                d. No need for Advil, migraine will pass
+            2. Closed a door or drawer on finger
+                a. Definitely broken. End of the world. Head to the hospital
+                b. Immobilizes finger for the day
+                c. Take an Advil for the pain since it'll probably hurt later
+                d. No Advil. That didn't even hurt. You should see the other guy
+            3. Bee String (NOT ALLERGIC - IF YOU'RE ALLERGIC AND HAVE BEEN STUNG BY A BEE CONSULT A DOCTOR IMMEDIATELY)
+                a. Can't use this body part for the day, even after an anti-inflammatory (Benadryl + Advil)
+                b. Benadryl and Advil plus some rest and the day will go on
+                c. Benadryl for the reaction and some ice
+                d. Ice and continue with the day
+                e. What bee sting?
+        Emergency / Rare Occurrence Pain (up to one week after surgery or injury):
+            1. Wisdom teeth removal
+                a. Regular prescription painkiller use and pain still causes sleep loss
+                b. Painkiller use helped with eating and sleeping... still very painful
+                c. Painkiller use just to sleep, Advil during the day
+                d. No painkiller use a 1 day after surgery, Advil use throughout the day
+                e. No painkiller use at all, Advil just to eat and sleep
+            2. Broken bone - ignore immediate injury, consider after hospital visit (arm, leg, hand, etc.)
+                a. Regular prescription painkiller use and pain still causes sleep loss
+                b. Painkillers use just to sleep, Advil during the day
+                c. No painkiller use 1-3 days after injury
+                d. Advil just to help with sleep and daily activity
+                e. No painkiller use at all, maybe use Advil to help sleep
+    Grouping Flexibility
+        Flexibility of uninjured appendage (assuming leg for now):
+            1. Toe touch
+                a. Hands reach knee
+                b. Hands reach middle of shin
+                c. Hands reach ankle
+                d. Hands reach toes
+                e. Palm on floor
+            2. Knee bend
+                a. Bending knee so foot is barely off ground
+                b. Bending knee so angle of bend is ~45 degrees (form a right angle)
+                c. Bending knee so you can reach back and grab foot
+                d. Heel can touch to butt
+        Flexibility of injured appendage (assuming leg for now):
+            1. Toe touch
+                a. Hands reach knee
+                b. Hands reach middle of shin
+                c. Hands reach ankle
+                d. Hands reach toes
+                e. Palm on floor
+            2. Knee bend
+                a. Bending knee so foot is barely off ground
+                b. Bending knee so angle of bend is ~45 degrees (form a right angle)
+                c. Bending knee so you can reach back and grab foot
+                d. Heel can touch to butt
+
+=======================================================================================================================
+
+Middle:
+    Grouping Activity
+        Physical activity (highest amount of activity before the injury is assumed to have affected activity):
+            1. Gym - heavy weight lifting
+                a. 6-7 days / week
+                b. 4-5 days / week
+                c. 2-3 days / week
+                d. once a week
+                e. never
+            2. Gym - cardio or aerobic exercise
+                a. 6-7 days / week
+                b. 4-5 days / week
+                c. 2-3 days / week
+                d. once a week
+                e. never
+            3. Gym - yoga or flexibility conditioning
+                a. 6-7 days / week
+                b. 4-5 days / week
+                c. 2-3 days / week
+                d. once a week
+                e. never
+
+End:
+    Classifying and Grouping Patient Answered Data
+        Scores of the questions above
+        How should the scores affect the patient's classification
+
+    Pain and Flexibility
+        Create weight and score for each category and question, respectively
+            Calculate
+
+"""
